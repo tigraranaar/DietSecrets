@@ -1,0 +1,78 @@
+.about {
+  .about__photo {
+    .gall-wrapper {
+      position: relative;
+
+      .gall-back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 300px;
+      }     
+
+      .gall-img {
+        position: relative;
+        padding: 60px;
+      }      
+    }
+    .title {
+      font-weight: normal;
+      padding-bottom: 50px;
+      font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
+
+      h2 {
+        font-weight: normal;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .about__main {
+    padding: 75px 0;
+    .row {
+      .about__item {
+        .about__img {
+          background-color: #ffb55e;
+          border-radius: 50%;
+          width: 75px;
+          height: 75px;
+          margin: 0 auto;
+  
+          div {
+            margin: 0 auto;
+          }
+        }
+  
+        .about__text {
+          padding: 25px 80px;
+          text-align: center;
+          font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
+        }
+      }
+    }
+  }
+
+  .about__description {
+    .about__text {
+      padding: 20px 50px;
+      span {
+        padding: 20px 0;
+        font-weight: bold;
+      }
+      p {
+        display: inline;
+      }
+      hr {
+        width: 50%;
+        border: none;
+        height: 2px;
+        background-color: #ffb55e;
+        color: #ffb55e;
+        margin: 10px 0;
+      }
+    }
+  }
+}

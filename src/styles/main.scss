@@ -1,0 +1,77 @@
+@import "~bootstrap-4-grid/scss/grid.scss";
+@import 'fonts';
+@import '~sprite.scss';
+@import '_sprite.scss';
+@import 'header.scss';
+@import 'about.scss';
+@import 'menu.scss';
+@import 'franch.scss';
+@import 'section.scss';
+@import 'footer.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.span-bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    display: block !important;
+
+    &__logo {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+
+    &__img {
+      width: auto;
+    }
+
+    &__label {
+      display: inline-block !important;
+      font-size: 36px;
+    }
+
+    &__input {
+      &:checked {
+        & ~ .menu {
+          max-height: 300px !important;
+        }
+      }
+    }
+
+    &__menu {
+      .menu {
+        display: block !important;
+        max-height: 0 !important;
+        overflow: hidden;
+        transition: all 0.5s ease !important;
+
+        &__item {
+          margin: 0 auto !important;
+          text-align: center;
+          padding-top: 15px !important;
+          width: 200px;
+        }
+
+        &__item--dropdown {
+          position: relative !important;
+
+          &:hover {
+            .menu__item--dropdown-content{
+              display: block;
+              position: absolute !important;
+              top: 0 !important;
+              left: 80% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

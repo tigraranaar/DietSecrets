@@ -1,0 +1,53 @@
+.header
+  .header__navbar
+    .navbar
+      .navbar__logo
+        img(class='navbar__img' src='images/logo.png')
+        label.navbar__label(for='navbar__input') &#9776;
+
+      .navbar__menu
+        input.navbar__input#navbar__input(type='checkbox')
+
+        ul.menu
+          li.menu__item
+            img(src="images/vk.png")
+          li.menu__item
+            img(src="images/inst.png")
+          li.menu__item
+            button Заказать звонок
+
+  .container
+    .row
+      .col-md-6
+        .header__title  
+          h1
+            | Франшиза
+          .header__organic
+            h1
+              | Органической
+          h1
+            | Кухни
+
+        .header__subtitle
+          h5
+            | Мы делаем полезную еду - вкусной
+        .header__box
+          .box_row
+            .box_circle
+            .box_text 
+              p 
+                | Кафе + Доставка
+          .box_row.box_row--center
+            .box_circle.box_circle--center
+            .box_text 
+              p 
+                |  Чиста прибыль
+              p
+                | от 100000 рублей
+          .box_row
+            .box_circle
+            .box_text 
+              p 
+                |  Пицца, бургеры и десерты, 
+              p  
+                | которые не вредт фигуре

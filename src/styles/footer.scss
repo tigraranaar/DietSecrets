@@ -1,0 +1,40 @@
+%footer-style {
+  font-family: PT Sans sans-serif;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  background-color: #19263f;
+
+  &__docs {
+    padding: 20px 0;
+  }
+
+  &__item {
+    @extend %footer-style;
+    text-decoration: none;
+    padding: 0 20px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__social {
+    @extend .d-flex, .justify-content-center;
+  }
+
+  &__ico {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__copy {
+    @extend %footer-style;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px 0;
+  }
+}

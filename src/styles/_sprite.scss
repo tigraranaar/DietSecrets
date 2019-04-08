@@ -1,0 +1,67 @@
+.icon_01 {
+  @include sprite($icon-01);
+}
+
+.icon_02 {
+  @include sprite($icon-02);
+}
+
+.icon_03 {
+  @include sprite($icon-03);
+}
+
+.icon_04 {
+  @include sprite($icon-04);
+}
+
+.icon_05 {
+  @include sprite($icon-05);
+}
+
+.icon_06 {
+  @include sprite($icon-06);
+}
+
+.icon_07 {
+  @include sprite($icon-07);
+}
+
+.icon_08 {
+  @include sprite($icon-08);
+}
+
+.icon_09 {
+  @include sprite($icon-09);
+}
+
+.image_01 {
+  @include sprite($image-01);
+}
+
+.image_02 {
+  @include sprite($image-02);
+}
+
+.image_03 {
+  @include sprite($image-03);
+}
+
+.image_04 {
+  @include sprite($image-04);
+}
+
+.image_05 {
+  @include sprite($image-05);
+}
+
+.footer__ico--fb {
+  @include sprite($fb);
+}
+
+.footer__ico--tw {
+  @include sprite($tw);
+}
+
+.footer__ico--in {
+  @include sprite($in);
+}

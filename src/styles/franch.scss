@@ -1,0 +1,111 @@
+.normal {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.franch {
+    background: url(../images/franch_bg.png) 100% 100% no-repeat;
+    background-color: #151515;
+
+    .container {
+        text-align: center;
+        color: #ffffff;
+
+        h1 {
+            font-weight: normal;
+        }
+
+        .row {
+            text-align: left;
+            .col-md-6 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                }
+
+                h5 {
+                    padding: 25px 140px;
+                    text-align: center;
+                }
+
+                .frchdiv {
+                    padding: 25px;
+                }
+            }
+        }
+
+
+    }
+}
+
+.strax {
+    padding: 50px 0;
+    .container {
+        h1 {
+            font-weight: normal;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .row {
+            text-align: left;
+
+            .col-md-6 {
+                h2 {
+                    text-transform: uppercase;
+                }
+
+                .straxdiv_text {
+                    padding: 10px 0;
+
+                    p {
+                        display: inline;
+                    }
+                }
+            }
+            .strax_img {
+                background: url("../images/strax.png");
+                background-repeat: no-repeat;
+                background-size: 180px;
+                background-position: top;
+            }
+        }
+    }
+}
+
+.pomes {
+    .container {
+        h1 {
+            font-weight: normal;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+         .row {
+            .col-md-6 {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.dietsecrets {
+    .container {
+        h1 {
+            font-weight: normal;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
