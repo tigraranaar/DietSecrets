@@ -28,10 +28,14 @@ $box-color:#ffffff;
     background-position: left;
 
     .container {
+      .padding-top-100 {
+        padding-top: 100px;
+      }
       .row {
         .col-md-6 {
           .footwrapper {
             display: flex;
+            max-width: 350px;
             .krug {
               border-radius: 50%;
               width: 7px;
@@ -72,6 +76,7 @@ $box-color:#ffffff;
               font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
               color: rgba(22, 22, 22, 255);
               text-align: left;
+              margin-top: 30px;
             }
             
             &::before,
