@@ -111,9 +111,13 @@
       padding: 0 15px;
       text-transform: uppercase;
       font-weight: 600;
-
       font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
       color: rgba(255, 255, 255, 255);
+
+
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+      }
     }
 
     .header__organic {

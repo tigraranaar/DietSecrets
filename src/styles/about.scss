@@ -47,9 +47,14 @@
         }
   
         .about__text {
-          padding: 25px 80px;
+          padding: 25px 20px;
           text-align: center;
           font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
+
+          p {
+            max-width: 200px;
+            margin: 0 auto;
+          }
         }
       }
     }

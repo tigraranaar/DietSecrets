@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: top;
   color: #ffffff;
-  padding: 300px 0 100px 0;
+  padding: 150px 0 100px 0;
 
   .container {
     text-align: center;
@@ -155,6 +155,11 @@
 .dostavka {
   background: linear-gradient(to right, #ffb006, #ffe506);
   position: relative;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 200px;
+  }
 
   .dost_car {
     position: absolute;
@@ -165,7 +170,6 @@
 
   .container {
     .title-box {
-      padding: 70px 25%;
       text-align: center;
 
       span {
@@ -173,6 +177,8 @@
       }
       p {
         display: inline;
+        margin: 70px auto;
+        max-width: 340px;
       }
     }
 
@@ -186,6 +192,7 @@
               height: 75px;
               background-color: #ffb55e;
               border-radius: 50%;
+              overflow: hidden;
   
               img {
                 width: 100%;
