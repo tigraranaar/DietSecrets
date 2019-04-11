@@ -32,7 +32,25 @@
 
     .gall-wrapper
       img(src="images/shar_1.png", class="gall-back")
-      img(src="images/gall.jpg" class="gall-img") 
+      //- img(src="images/gall.jpg" class="gall-img") 
+
+      #carouselExampleControls.carousel.slide(data-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='images/gall.jpg' alt='First slide')
+          .carousel-item
+            img.d-block.w-100(src='images/shx.jpg' alt='Second slide')
+          .carousel-item
+            img.d-block.w-100(src='images/shx_1.jpg' alt='Third slide')
+          .carousel-item
+            img.d-block.w-100(src='images/shx_2.jpg' alt='Third slide')
+        a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+
     
   .about__description.row
     .about__text.col-md-4

@@ -7,23 +7,13 @@
   &__navbar {
     .navbar {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       padding: 24px;
 
       &__logo {
         // width: 249px;
         // height: 49px;
-      }
-
-      &__label {
-        display: none;
-        font-style: normal;
-        color: white;
-      }
-
-      &__input {
-        display: none;
       }
 
       &__menu {
@@ -36,7 +26,6 @@
 
           &__item {
             margin-left: 20px;
-            font-family: PT Sans sans-serif;
 
             a {
               text-decoration: none;
@@ -53,7 +42,7 @@
               padding: 10px 20px;
               border-radius: 30px;
 
-              font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
+              font-family: Roboto Regular, AdobeInvisFont, MyriadPro-Regular;
               color: rgba(22, 22, 22, 255);
               text-align: left;
             }

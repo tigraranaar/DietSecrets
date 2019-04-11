@@ -2,6 +2,9 @@ $padding-size: 20px;
 $marker-height: 40px;
 $box-color:grey;
 
+.padding-top-70 {
+    padding-top: 70px;
+}
 .normal {
     font-weight: normal;
 }
@@ -11,8 +14,9 @@ $box-color:grey;
 }
 
 .franch {
-    background: url(../images/franch_bg.png) 100% 100% no-repeat;
-    background-color: #151515;
+    background: url(../images/franch_bg.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
 
     .container {
         text-align: center;
@@ -50,6 +54,10 @@ $box-color:grey;
                     display: flex;
                     align-items: center;
 
+                    p {
+                        padding-left: 15px;
+                        padding-top: 5px;
+                    }
                     .span {
                         border-radius: 50%;
                         background-color: aqua;
@@ -60,8 +68,6 @@ $box-color:grey;
                 }
             }
         }
-
-
     }
 }
 
@@ -84,7 +90,7 @@ $box-color:grey;
                     align-items: center;
                     .straaxbox {
                         color: white;
-                        background-color: red;
+                        background-color: #d24a43;
                         border-radius: 50%;
                         width: 50px;
                         height: 50px;
@@ -137,7 +143,7 @@ $box-color:grey;
                     }
                     .pomkrug {
                         border-radius: 50%;
-                        background-color: green;
+                        background-color: #77c28d;
                         width: 10px;
                         height: 10px;
                         padding: 15px;
@@ -152,6 +158,10 @@ $box-color:grey;
                 .pomesruch {
                     width: 90%;
                     margin-top: -120px;
+
+                    @media screen and (max-width: 1200px) {
+                        margin-top: -50px;
+                    }
                 }
             }
         }
@@ -172,10 +182,15 @@ $box-color:grey;
 
                     p {
                         max-width: 300px;
+
+                        @media screen and (max-width: 1200px) {
+                            text-align: center;
+                            margin: 0 auto;
+                        }
                     }
                 }
                 .sayavdiv {
-                    background-color: $box-color;
+                    background-color: #f7f7f7;
                     padding: $padding-size;
                     position: relative;
                     color: #000000;
@@ -183,6 +198,10 @@ $box-color:grey;
                     border-radius: 0 0 10px 10px;
                     max-width: 300px;
                     height: 100%;
+
+                    @media screen and (max-width: 768px) {
+                        margin: 0 auto;
+                    }
         
                     button {
                       background-color: #ffb55e;
@@ -209,12 +228,12 @@ $box-color:grey;
                     }
                     &::before {
                       left: 0;
-                      border-bottom-color: $box-color;
+                      border-bottom-color: #f7f7f7;
                       border-left-width: 0 ;
                     }
                     &::after {
                       right: 0;
-                      border-bottom-color: $box-color;
+                      border-bottom-color: #f7f7f7;
                       border-right-width: 0 ;
                     }
                   }
