@@ -12,7 +12,25 @@
             li.menu__item
               img(src="images/inst.png")
             li.menu__item
-              button Заказать звонок
+                button.btn.btn-default.orbutton(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='@getbootstrap') Заказать звонок
+    
+                #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                  .modal-dialog(role='document')
+                    .modal-content
+                      .modal-header
+                        h5#exampleModalLabel.modal-title Закажите звонок
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                          span(aria-hidden='true') ×
+                      .modal-body
+                        form
+                          .form-group
+                            label.col-form-label(for='recipient-name') Ваше имя:
+                            input#recipient-name.form-control(type='text')
+                          .form-group
+                            label.col-form-label(for='message-text') Ваш телефон:
+                            input#message-text.form-control
+                      .modal-footer
+                        button.btn.btn-primary.orbutton(type='button') Заказать звонок
 
   .container
     .row
@@ -39,7 +57,7 @@
             .box_circle.box_circle--center
             .box_text 
               p 
-                |  Чиста прибыль
+                |  Чистая прибыль
               p
                 | от 100000 рублей
           .box_row
@@ -48,4 +66,4 @@
               p 
                 |  Пицца, бургеры и десерты, 
               p  
-                | которые не вредт фигуре
+                | которые не вредят фигуре

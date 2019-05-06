@@ -10,21 +10,25 @@
 
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Требования к помещению: 
-            | 50кв.м - организация производственного цеха
+            | 100-200 кв.м, 50 кв.м, 50+ зал дл гостей
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Паушальный взнос: 
             | 150 тысяч рублей
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Роялти: 
             | 4% + 15 тысяч рублей маркетинговый сбор
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Инвестиции 
             | (без паушального взноса): 950 тысяч рублей
@@ -35,39 +39,81 @@
 
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Требования к помещению: 
-            | 100-200 кв.м, 50 кв.м, 50+ зал дл гостей
+            | 50кв.м - организация производственного цеха
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Паушальный взнос: 
             | 250-300 тысяч рублей
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Роялти: 
             | 4% + 15 тысяч рублей маркетинговый сбор
         .frchdiv
           .span 
+            img(src="./images/checkmark.png", alt="")
           p 
             strong Инвестиции 
             | (без паушального взноса): 2.2 млн. рублей
 
     .footer
 
-.strax
+
+.opit 
   .container
-    h1 
+    .opitwrapper
+      img(class="opit1" src="./images/opit_1.png", alt="")
+      img(class="opit2" src="./images/opit_2.png", alt="")
+      .opitbox
+        .row
+          .col-md-6.centeredrow
+            p
+              | Наш опыт позволяет 
+            p
+              strong  уменьшить расходы 
+            p
+              | при открытии кафе на 20%
+          .col-md-2
+            img.arrow(src="./images/arrow.png", alt="")
+          .col-md-4
+            button.btn.btn-default.orbutton(type='button', data-toggle='modal', data-target='#exampleModal1', data-whatever='@getbootstrap1') ПОДРОБНЕЕ
+            #exampleModal1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+              .modal-dialog(role='document')
+                .modal-content
+                  .modal-header
+                    h5#exampleModalLabel.modal-title Узнать подробнее
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                      span(aria-hidden='true') ×
+                  .modal-body
+                    form
+                      .form-group
+                        label.col-form-label(for='recipient-name') Ваше имя:
+                        input#recipient-name.form-control(type='text')
+                      .form-group
+                        label.col-form-label(for='message-text') Ваш телефон:
+                        input#message-text.form-control
+                  .modal-footer
+                    button.btn.btn-primary.orbutton(type='button') Отправить
+
+.strax
+  img(class="shar2" src="./images/shar_2.png", alt="")
+  .container
+    h2 
       strong Основной страх 
-    h1 при покупке франшизы
+    h2 при покупке франшизы
 
     .row.padding-top-70
       .col-md-6
         .wrapperstrax
           .straaxbox
             | X
-          h2 
+          h4 
             strong Я не справлюсь
 
         .straxdiv_text
@@ -88,13 +134,14 @@
         
 
 .pomes
+  img(class="ruch" src="./images/ruch.png", alt="")
   .container
-    h1 Выберем помещение 
-    h1
+    h2 Выберем помещение 
+    h2
       strong вместе!
 
-    .row.padding-top-70
-      .col-md-6
+    .row
+      .col-md-6.padding-top-70.padding-bottom-70
         .povdiv
           .pomkrug
           img(class="pomimg" src="./images/pom_1.png", alt="")
@@ -112,8 +159,8 @@
           img(class="pomimg" src="./images/pom_3.png", alt="")
           p 
             | Учтем не только проходимость, но и логистику, чтобы оптимизировать сервис доставки.                
-      .col-md-6
-        img(class="pomesruch" src="./images/strax_1.png", alt="")
+      .col-md-6.pomesruch
+        
 
 .sayavk
   .container
@@ -121,13 +168,15 @@
       .col-md-6
         .sayavk_box
           p Целых 2 недели обучения прямо в действующем кафе сети!
-          p Изучим все аспекты работы в ресторанном бизнесе от стартовых документов, до обслуживания гостей, чтобы вы были готовы развивать свое собственное заведение.
+          p.padding-top-30 Изучим все аспекты работы в ресторанном бизнесе от стартовых документов, до обслуживания гостей, чтобы вы были готовы развивать свое собственное заведение.
       .col-md-6
         .sayavdiv
-          h1 оставьте завку
-          p чтобы получить подробный план
-          input(type="")
-          button получить
+          h1 Оставьте заявку
+          p 
+            | Чтобы получить подробный 
+            strong  план обучения:
+          input(type="text" placeholder="dietsecrets@ya.ru") 
+          button ПОЛУЧИТЬ
 
 .dietsecrets
   img(class="leftimg" src="./images/dietsecrets_5.png", alt="")
@@ -154,6 +203,7 @@
       .col-md-6
         .dietdiv
           .dietbox
+            .boxgrug
             img(class="okimg" src="./images/ok.png", alt="")
             p 
               |  Возьмем интернет-маркетинг на себя и будем рады применять все знания для заполнения вашего зала

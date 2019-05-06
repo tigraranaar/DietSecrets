@@ -7,7 +7,7 @@
             | Приготовление еды для меня - это хобби, которое выросло в бизнес. Мое инженерное прошлое позволило мне системно выстроить свое дело.
           p
             | Я сильно интересовался правильным питанием и был сильно удивлен, что для многих людей это вареная куриная грудка каждый день. Мне хотелось большего разнообразия блюд и вкусов. Это вдохновило меня на создание органического меню, которое теперь радует гостей Diet Secrets!
-          p
+          p.rukov
             | Руководитель сети Diet Secrets
           h3
             | Сергей Масленников
@@ -18,9 +18,9 @@
       .row
         .col-md-6
           h1
-            | Проверьте всё 
+            | ПРОВЕРЬТЕ ВСЕ
           h1 
-            strong лично!
+            strong ЛИЧНО!
           .footwrapper
             .krug
             p
@@ -37,25 +37,52 @@
             p
               strong Приезжайте на экскурсию!
 
-            p 
-              | И мы компенсируем 
-              strong 20 000 рублей 
-              | при покупке франшизы
+            .pblock
+              p 
+                | И мы компенсируем 
+              P
+                strong 20 000 рублей 
+              P
+                | при покупке франшизы
 
-            button ПОДРОБНЕЕ
+            button.footbutton.btn.btn-default.orbutton(type='button', data-toggle='modal', data-target='#exampleModal2', data-whatever='@getbootstrap1') ПОДРОБНЕЕ
+            #exampleModal2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+              .modal-dialog(role='document')
+                .modal-content
+                  .modal-header
+                    h5#exampleModalLabel.modal-title Узнать подробнее
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                      span(aria-hidden='true') ×
+                  .modal-body
+                    form
+                      .form-group
+                        label.col-form-label(for='recipient-name') Ваше имя:
+                        input#recipient-name.form-control(type='text')
+                      .form-group
+                        label.col-form-label(for='message-text') Ваш телефон:
+                        input#message-text.form-control
+                  .modal-footer
+                    button.btn.btn-primary.orbutton(type='button') Отправить
       .row.padding-top-100
         form(class="col" action="")
           h3
             | Этот бизнес позволит зарабатывать вам от 
+          h3.botth3
             span 100 000 рублей в месяц!
           p
-            | Хотите так же? Звоните или оставляйте заявку и мы вам всё подробно расскажем!
+            | Хотите так же? Звоните или оставляйте 
+          p
+            | заявку и мы вам всё подробно 
+          p
+            | расскажем!
           .inputbox
-            input(type="text" placeholder="Иван Иванович")
-            input(type="text" placeholder="dietsecrets@ya.ru") 
-            input(type="text" placeholder="+7(999)999-99-99") 
-          button оставьте завку
-
+            input.inputt(type="text" placeholder="Иван Иванович")
+            input.inputt(type="text" placeholder="dietsecrets@ya.ru") 
+            input.inputt(type="text" placeholder="+7(999)999-99-99") 
+          button ОСТАВИТЬ ЗАЯВКУ
+    
+    hr
+    .container
       .row.ft
         .col-md-6.ft_left
           p
@@ -64,7 +91,7 @@
             | Политика конфиденциальности
         .col-md-6.ft_right
           p
-            | г. Ижевск, ул. Пушкинска, 198
+            | г. Ижевск, ул. Пушкинская, 198
           p
             | 89508199277
-        .footer_date 2019 (C)          
+        .footer_date 2019 (C)      

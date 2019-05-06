@@ -2,19 +2,49 @@
   .container
     h3.title Меню Diet Secrets
 
-    .row
-      .col-md-3
-        .menu__img.icon_04
-        button  Пицца
-      .col-md-3
-        .menu__img.icon_05
-        button  Бургеры
-      .col-md-3
-        .menu__img.icon_06
-        button  Паста
-      .col-md-3
-        .menu__img.icon_07
-        button  Десерты
+  .container
+    .menu-carousel
+      #carousel-example222.carousel.slide(data-ride='carousel')
+        .carousel-inner.row.w-100.mx-auto.carousel-inner111(role='listbox')
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.active.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_04
+              button  Пицца
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_05
+              button  Бургеры
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_06
+              button  Паста
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_07
+              button  Десерты
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_08
+              button  Супы
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_09
+              button  Салаты
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_021
+              button  Горячее
+          .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.carousel-item11
+            .img-fluid.mx-auto.d-block
+              .menu__img.icon_011
+              button  Гарниры
+          
+        a.carousel-control-prev(href='#carousel-example222' role='button' data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carousel-example222' role='button' data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
 
     .subtitle
       img(src="./images/noun.png", alt="")
@@ -24,8 +54,8 @@
     .menu__components
       h2  Без сахара, без жиров, без дрожжей
 
-    h3 Комплексные 
-    h3.title-bold органические ланчы
+    h3.complex Комплексные 
+    h3.complex.title-bold органические ланчы
 
     .wrapper
       .row
@@ -39,15 +69,46 @@
           p профессиональным диетологом
           img(src="images/menuwr2.png", alt="")
 
-    button.menu-button Посмотреть меню
+  .container.text-center
+    button.menu-button(data-toggle='modal' data-target='.bs-example-modal-lg') Посмотреть меню
+    .modal.fade.bs-example-modal-lg(tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true')
+      .modal-dialog.modal-xl.modal-dialog-centered
+        .modal-content
+          .modal-header
+            h5#exampleModalLabel.modal-title Закажите звонок
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            #carouselExampleControls1.carousel.slide(data-ride='carousel')
+              .carousel-inner.carousel-inner5
+                .carousel-item.active
+                  img.d-block.w-100(src='images/menu/1.jpg' alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='images/menu/2.jpg' alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='images/menu/3.jpg' alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='images/menu/4.jpg' alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='images/menu/5.jpg' alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='images/menu/6.jpg' alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='images/menu/7.jpg' alt='First slide')
+              a.carousel-control-prev(href='#carouselExampleControls1' role='button' data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselExampleControls1' role='button' data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
 
 .true
-  img(class="true_img_1" src="./images/true_1.png", alt="")
+  img(class="true_img_1" src="./images/true_11.png", alt="")
   img(class="true_img_2" src="./images/shar_1.png", alt="")
-  img(class="true_img_3" src="./images/true_1.png", alt="")
+  img(class="true_img_3" src="./images/true_12.png", alt="")
 
   .container
-    .title-box
+    .title-box.truepitbox
       p 
         | Правильное питание - 
         strong тренд 2019 года 
@@ -83,6 +144,7 @@
 
 .dostavka
   img(class="dost_car" src="./images/dostavka_car.png", alt="")
+  img(class="dost_list" src="./images/list.png", alt="")
   .container
     .row.title-box 
       p
@@ -90,26 +152,29 @@
         | позволяет нашим клиентам питаться органической едой в любой части города, что приносит нам дополнительный заработок
 
     .row.row-dost
-      .col-md-3
+      .col-md-1.snbox
+        .snitem !
         
-      .col-md-3
-        p Работаем со всеми популярными каналами организации продажи "Доставки еды".
-      .col-md-6.netbox
-        .row
+      .col-md-4
+        p 
+          | Работаем со всеми популярными каналами организации продажи 
+          strong "Доставки еды".
+      .col-md-7.netbox
+        .row.marginrow
           .soc.soc-1.col
-            p Сайт
+            .socText Сайт
             .soc-img
               img(src="./images/1.png", alt="")
           .soc.soc-3.col
-            p Соц. сети
+            .socText Соц. сети
             .soc-img
               img(src="./images/3.png", alt="")
         .row
           .soc.soc-2.col
-            p яндекс.еда
+            .socText Яндекс.еда
             .soc-img
               img(src="./images/2.png", alt="")
           .soc.soc-4.col
-            p Delivery Club
+            .socText Delivery Club
             .soc-img
               img(src="./images/4.png", alt="")

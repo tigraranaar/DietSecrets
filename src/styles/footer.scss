@@ -2,6 +2,10 @@ $padding-size: 20px;
 $marker-height: 40px;
 $box-color:#f6f6f6;
 
+$pfont: 25px;
+$h3font: 35px;
+$h1font: 45px;
+
 .footer {
   color: #ffffff;
 
@@ -14,8 +18,22 @@ $box-color:#f6f6f6;
     .container {
       .row {
         .col-md-6 {
+          p {
+            margin: 20px 0;
+            font-size: $pfont;
+          }
+
+          .rukov {
+            margin: 0;
+            margin-top: 40px;
+          }
           p, h3 {
-            max-width: 300px;
+            margin-top: 0;
+            padding-top: 0;
+          }
+
+          h3 {
+            font-size: $h3font;
           }
         }
        }
@@ -27,15 +45,23 @@ $box-color:#f6f6f6;
     background-size: cover;
     background-position: left;
 
+    hr {
+      border: 1px solid #6d6d6d;
+      margin-top: 50px;
+    }
+
     .container {
       .padding-top-100 {
         padding-top: 100px;
       }
       .row {
         .col-md-6 {
+
+          h1 {
+            font-size: $h1font;
+          }
           .footwrapper {
             display: flex;
-            max-width: 350px;
             padding-top: 30px;
             .krug {
               border-radius: 50%;
@@ -45,6 +71,9 @@ $box-color:#f6f6f6;
               background-color: #ffb55e;
               border: 3px solid white;
               margin: 1em 1em 1em 0;
+            }
+            p {
+              font-size: $pfont;
             }
           }
           
@@ -65,7 +94,12 @@ $box-color:#f6f6f6;
             p {
               max-width: 180px;
               margin: 10px auto;
+            }
 
+            .pblock {
+              p {
+                margin:0 auto;
+              }
             }
             .vajno {
               display: inline-block;
@@ -73,16 +107,21 @@ $box-color:#f6f6f6;
               padding: 10px 20px;
               border: 1px solid grey;
             }
-            button {
+            .orbutton {
               background-color: #ffb55e;
               border: 0;
-              padding: 10px 20px;
+              padding: 15px 20px;
               border-radius: 30px;
-
-              font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
-              color: rgba(22, 22, 22, 255);
+              // font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
+              color: #161616;
               text-align: left;
               margin-top: 30px;
+              text-align: center;
+              width: 90%;
+
+
+              box-shadow: 1px 1px 15px 1px #ffb55e;
+              border-bottom: 7px solid #d8a66c;
             }
             
             &::before,
@@ -117,26 +156,38 @@ $box-color:#f6f6f6;
           padding: 50px 0;
 
           h3 {
-            max-width: 400px;
+            font-size: $h3font;
+            // max-width: 450px;
             margin: 0 auto;
+            margin-bottom:10px;
+            line-height: 1.1;
             span {
               color: #ffb55e;
             }
           }
 
+          .botth3 {
+            margin-bottom: 50px;
+          }
           p {
             max-width: 300px;
-            margin: 50px auto;
+            margin: 0  auto;
+            line-height: 1.1;
             span {
               display: block;
             }
           }
 
-          input {
-            border-radius: 50px;
-            padding: 15px 30px;
-            text-align: center;
-            margin: 10px 30px;
+          .inputbox {
+            margin-top: 50px;
+            .inputt {
+              border-radius: 50px;
+              padding: 15px 30px;
+              text-align: center;
+              margin: 10px 30px;
+              border: 1px solid #dadada;
+              box-shadow: inset 0px 7px 10px #e4e3e3;
+            }
           }
 
           button {
@@ -146,16 +197,26 @@ $box-color:#f6f6f6;
             padding: 15px 60px;
             border-radius: 30px;
 
-            font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
+            // font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
             color: rgba(22, 22, 22, 255);
-            text-align: left;            
+            text-align: left;    
+
+            box-shadow: 1px 1px 15px 1px #ffb55e;
+            border-bottom: 7px solid #d8a66c;        
           }
         }
       }
 
       .ft {
         padding-bottom: 20px;
-        padding-top: 50px;
+        padding-top: 10px;
+
+        .col-md-6 {
+          p {
+            margin: 0;
+            color: #e2e2e2e2;
+          }
+        }
         @media screen and (max-width: 768px) {
           .ft_left,.ft_right {
             text-align: center !important;
@@ -171,6 +232,9 @@ $box-color:#f6f6f6;
 
         .footer_date {
           margin: 0 auto;
+          color: #e2e2e2e2;
+          opacity: 0.7;
+          font-size: 12px;
         }
 
         @media screen and (max-width: 575px) {

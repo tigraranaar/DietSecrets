@@ -1,5 +1,6 @@
-@import "~bootstrap/scss/bootstrap";
 @import 'fonts';
+@import "~bootstrap/scss/bootstrap";
+@import 'carousel.scss';
 @import '~sprite.scss';
 @import '_sprite.scss';
 @import 'header.scss';
@@ -9,14 +10,29 @@
 @import 'footer.scss';
 
 body {
-  font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
+//  font-family: RobotoRegular;
+  //, AdobeInvisFont, MyriadPro-Regular;
+  // font-family: Open Sans;
+  // font-family: PT Sans;
+  margin: 0 !important;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
-.span-bold {
-  font-weight: bold;
+
+@media (min-width: 1200px) {
+  .container {
+    //max-width: 960px; 
+  } 
 }
 
 @media screen and (max-width: 1200px) {
  
+}
+
+@media screen and (max-width: 768px) {
+  
 }

@@ -2,7 +2,23 @@
   background: url("../images/blwh.png"), url("../images/main-bg.png") 100% 100% no-repeat;
   background-size: cover;
   color: #fff;
-  //height: 100vh;
+
+  .orbutton {
+    background-color: #ffb55e;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    // font-family: Roboto Regular, AdobeInvisFont, MyriadPro-Regular;
+    color: rgba(22, 22, 22, 255);
+    text-align: left;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #161616;
+    font-family: "Roboto";
+    font-weight: 400;
+  }
 
   &__navbar {
     .navbar {
@@ -11,12 +27,15 @@
       align-items: center;
       padding: 24px;
 
-      &__logo {
-        // width: 249px;
-        // height: 49px;
+      @media screen and (max-width: 768px) {
+        justify-content: center;
       }
 
       &__menu {
+        @media screen and (max-width: 768px) {
+          padding-top: 25px;
+        }
+
         .menu {
           display: flex;
           justify-content: space-around;
@@ -36,15 +55,8 @@
               width: 40px;
             }
 
-            button {
-              background-color: #ffb55e;
-              border: 0;
-              padding: 10px 20px;
-              border-radius: 30px;
-
-              font-family: Roboto Regular, AdobeInvisFont, MyriadPro-Regular;
-              color: rgba(22, 22, 22, 255);
-              text-align: left;
+            #exampleModal {
+              color: #000000;
             }
           }
 
@@ -87,25 +99,35 @@
 
   &__title {
     @extend .container;
-    padding: 84px 0;
-    padding: 84px 0px 42px 0px;
+
+    padding: 42px 0px 42px 0px;
+    @media screen and (max-width: 1400px) {
+      padding: 0;
+    }
 
     h1 {
-      font-family: Open Sans sans-serif;
       font-weight: 300;
-      line-height: 58px;
+      line-height: 1.2;
       font-size: 48px;
       margin: 0;
       text-align: left;
       padding: 0 15px;
       text-transform: uppercase;
       font-weight: 600;
-      font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
+      // font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
       color: rgba(255, 255, 255, 255);
+      font-size: 65px;
+      color: #ffffff;
+      //font-family: "Roboto";
+      font-weight: 900;
 
+
+      @media screen and (max-width: 1200px) {
+        font-size: 38px;
+      }
 
       @media screen and (max-width: 768px) {
-        font-size: 30px;
+        font-size: 28px;
       }
     }
 
@@ -123,21 +145,26 @@
         -o-transform: skew(30deg);
         transform: skew(30deg);
         color: #1c1c1c;
-        font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
+        // font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
       }
     }
   }
 
   &__subtitle {
     h5 {
-      font-family: PT Sans sans-serif;
       font-weight: normal;
       font-size: 18px;
       text-align: center;
       margin: 0;
       text-align: left;
       padding-bottom: 42px;
-      font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
+      // font-family: Roboto-Black, AdobeInvisFont, MyriadPro-Regular;
+
+      font-size: 25px;
+      letter-spacing: 1px;
+      //color: #161616;
+      //font-family: "Roboto";
+      font-weight: 400;
     }
   }
 
@@ -147,6 +174,7 @@
     border-style: dashed;
     border-radius: 10px;
     margin-bottom: 136px;
+    padding-bottom: 10px;
 
     .box_row--center {
       align-items: center;
@@ -163,11 +191,19 @@
         -moz-border-radius: 60px;
         -webkit-border-radius: 60px;
         border-radius: 60px;
-        margin: 45px 38px;
+        margin: 35px 38px;
+
+        @media screen and (max-width: 768px) {
+          margin: 45px 18px;
+        }        
       }
 
       .box_circle--center {
         margin: 0 38px;
+
+        @media screen and (max-width: 768px) {
+          margin: 0 18px;
+        }        
       }
 
       .box_text {
@@ -175,6 +211,11 @@
 
         p {
           margin: 0;
+          font-size: 25px;
+          letter-spacing: 1px;
+          //color: #161616;
+          //font-family: "Roboto";
+          font-weight: 400;
         }
       }
     }

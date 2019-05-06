@@ -2,13 +2,18 @@
   .about__photo {
     .gall-wrapper {
       position: relative;
+      width: 80%;
 
       .gall-back {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -50px;
+        right: -50px;
         width: 300px;
         height: 300px;
+        
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }     
 
       .gall-img {
@@ -17,12 +22,18 @@
       }      
     }
     .title {
+      text-align: center;
       font-weight: normal;
       padding-bottom: 50px;
-      font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
+      // font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
 
       h2 {
         font-weight: normal;
+
+        font-size: 40px;
+        letter-spacing: 1px;
+        color: #2c2c2c;
+        //font-family: "Roboto";
       }
     }
     img {
@@ -49,11 +60,17 @@
         .about__text {
           padding: 25px 20px;
           text-align: center;
-          font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
+          // font-family: Roboto-Regular, Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
 
           p {
-            max-width: 200px;
+            //max-width: 200px;
             margin: 0 auto;
+
+            font-size: 25px;
+            letter-spacing: 1px;
+            color: #2c2c2c;
+            //font-family: "Roboto";
+            text-align: center;
           }
         }
       }
@@ -62,13 +79,15 @@
 
   .about__description {
     .about__text {
-      padding: 20px 50px;
+      padding: 20px 20px;
       span {
         padding: 20px 0;
         font-weight: bold;
       }
       p {
         display: inline;
+
+        font-size: 25px;
       }
       hr {
         width: 50%;
